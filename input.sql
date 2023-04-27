@@ -1,0 +1,1 @@
+SELECT $$INSERT INTO crm (contactid, firstname, lastname, email, phonemobile, phonehome, faxbusiness) VALUES ( $$ ||  contactid || $$,'$$ ||  firstname || $$','$$ || lastname || $$ (#$$ || contactid || $$)','$$ || email || $$','$$ || phonemobile || $$','$$ || phonehome || $$','$$ || faxbusiness || $$');$$ FROM CRM ;
